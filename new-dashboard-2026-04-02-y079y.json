@@ -1,0 +1,1110 @@
+{
+  "apiVersion": "dashboard.grafana.app/v1",
+  "kind": "Dashboard",
+  "metadata": {
+    "name": "dcfhvi9vg1d91cc"
+  },
+  "spec": {
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations \u0026 Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "description": "Business observability dashboard tracking North Star metrics and key business KPIs. Monitor user engagement, conversion rates, revenue trends, and customer retention. Correlate business outcomes with technical performance to understand the full impact of system health.",
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "links": [],
+    "panels": [
+      {
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 24,
+          "x": 0,
+          "y": 0
+        },
+        "id": 17,
+        "options": {
+          "code": {
+            "language": "plaintext",
+            "showLineNumbers": false,
+            "showMiniMap": false
+          },
+          "content": "\u003c!-- FULL WIDTH BANNER --\u003e\n    \u003cdiv style=\"background: linear-gradient(180deg, #FF7F5C 0%, #FF8C42 100%);\n                padding: 16px 30px;\n                color: #2C2C2C;\n                box-shadow: 0 4px 20px rgba(0,0,0,0.1);\"\u003e\n        \n        \u003c!-- Max Width Container --\u003e\n        \u003cdiv style=\"max-width: 960px; margin: 0 auto;\"\u003e\n            \n            \u003c!-- Main Warning Header --\u003e\n            \u003cdiv style=\"text-align: center; margin-bottom: 14px\"\u003e\n                \u003cdiv style=\"font-size: 1.8rem; font-weight: 600; letter-spacing: 0.3px; color: #2C2C2C;\"\u003e\n                    This is a template with sample data\n                \u003c/div\u003e\n                \u003cdiv style=\"font-weight: 500; font-size: 1.15rem; line-height: 1.3; color: #2C2C2C;\"\u003e\n                   Business Observability: Connecting technical performance to business outcomes\n                \u003c/div\u003e\n            \u003c/div\u003e\n            \n            \u003c!-- Steps - Horizontal Layout with Equal Widths --\u003e\n            \u003cdiv style=\"display: flex; gap: 12px; align-items: stretch; justify-content: center; max-width: 920px; margin: 0 auto;\"\u003e\n                \n                \u003c!-- Step 1 --\u003e\n                \u003cdiv style=\"background: rgba(255, 255, 255, 0.08);\n                            color: #2C2C2C;\n                            padding: 12px;\n                            border-radius: 10px;\n                            border: 1px solid rgba(255, 255, 255, 0.15);\n                            flex: 1;\n                            min-width: 0;\n                            display: flex;\n                            flex-direction: column;\n                            min-height: 50px;\"\u003e\n                    \u003cdiv style=\"display: flex; align-items: flex-start; gap: 8px;\"\u003e\n                        \u003cdiv style=\"background: white;\n                                   color: #2C2C2C;\n                                   width: 24px;\n                                   height: 24px;\n                                   min-width: 24px;\n                                   flex-shrink: 0;\n                                   border-radius: 6px;\n                                   display: flex;\n                                   align-items: center;\n                                   justify-content: center;\n                                   font-weight: 700;\n                                   font-size: 0.88rem;\"\u003e1\u003c/div\u003e\n                        \u003cdiv style=\"font-weight: 700; font-size: 0.95rem; color: #2C2C2C; line-height: 1.3;\"\u003eReplace Data Source\u003c/div\u003e\n                    \u003c/div\u003e\n                \u003c/div\u003e\n                \n                \u003c!-- Step 2 --\u003e\n                \u003cdiv style=\"background: rgba(255, 255, 255, 0.08);\n                            color: #2C2C2C;\n                            padding: 12px;\n                            border-radius: 10px;\n                            border: 1px solid rgba(255, 255, 255, 0.15);\n                            flex: 1;\n                            min-width: 0;\n                            display: flex;\n                            flex-direction: column;\n                            min-height: 50px;\"\u003e\n                    \u003cdiv style=\"display: flex; align-items: flex-start; gap: 8px;\"\u003e\n                        \u003cdiv style=\"background: white;\n                                   color: #2C2C2C;\n                                   width: 24px;\n                                   height: 24px;\n                                   min-width: 24px;\n                                   flex-shrink: 0;\n                                   border-radius: 6px;\n                                   display: flex;\n                                   align-items: center;\n                                   justify-content: center;\n                                   font-weight: 700;\n                                   font-size: 0.88rem;\"\u003e2\u003c/div\u003e\n                        \u003cdiv style=\"font-weight: 700; font-size: 0.95rem; color: #2C2C2C; line-height: 1.3;\"\u003eUpdate Metrics\u003c/div\u003e\n                    \u003c/div\u003e\n                \u003c/div\u003e\n                \n                \u003c!-- Step 3 --\u003e\n                \u003cdiv style=\"background: rgba(255, 255, 255, 0.08);\n                            color: #2C2C2C;\n                            padding: 12px;\n                            border-radius: 10px;\n                            border: 1px solid rgba(255, 255, 255, 0.15);\n                            flex: 1;\n                            min-width: 0;\n                            display: flex;\n                            flex-direction: column;\n                            min-height: 50px;\"\u003e\n                    \u003cdiv style=\"display: flex; align-items: flex-start; gap: 8px;\"\u003e\n                        \u003cdiv style=\"background: white;\n                                   color: #2C2C2C;\n                                   width: 24px;\n                                   height: 24px;\n                                   min-width: 24px;\n                                   flex-shrink: 0;\n                                   border-radius: 6px;\n                                   display: flex;\n                                   align-items: center;\n                                   justify-content: center;\n                                   font-weight: 700;\n                                   font-size: 0.88rem;\"\u003e3\u003c/div\u003e\n                        \u003cdiv style=\"font-weight: 700; font-size: 0.95rem; color: #2C2C2C; line-height: 1.3;\"\u003eUpdate \u0026 Test Queries\u003c/div\u003e\n                    \u003c/div\u003e\n                \u003c/div\u003e\n                \n                \u003c!-- Step 4 --\u003e\n                \u003cdiv style=\"background: rgba(255, 255, 255, 0.08);\n                            color: #2C2C2C;\n                            padding: 12px;\n                            border-radius: 10px;\n                            border: 1px solid rgba(255, 255, 255, 0.15);\n                            flex: 1;\n                            min-width: 0;\n                            display: flex;\n                            flex-direction: column;\n                            min-height: 50px;\"\u003e\n                    \u003cdiv style=\"display: flex; align-items: flex-start; gap: 8px;\"\u003e\n                        \u003cdiv style=\"background: white;\n                                   color: #2C2C2C;\n                                   width: 24px;\n                                   height: 24px;\n                                   min-width: 24px;\n                                   flex-shrink: 0;\n                                   border-radius: 6px;\n                                   display: flex;\n                                   align-items: center;\n                                   justify-content: center;\n                                   font-weight: 700;\n                                   font-size: 0.88rem;\"\u003e4\u003c/div\u003e\n                        \u003cdiv style=\"font-weight: 700; font-size: 0.95rem; color: #2C2C2C; line-height: 1.3;\"\u003eRename Dashboard \u0026 Delete This Panel\u003c/div\u003e\n                    \u003c/div\u003e\n                \u003c/div\u003e\n                \n            \u003c/div\u003e\n            \n        \u003c/div\u003e\n    \u003c/div\u003e\n",
+          "mode": "html"
+        },
+        "pluginVersion": "13.0.0-23744474324",
+        "title": "",
+        "transparent": true,
+        "type": "text"
+      },
+      {
+        "collapsed": false,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 5
+        },
+        "id": 18,
+        "panels": [],
+        "title": "Business Metrics",
+        "type": "row"
+      },
+      {
+        "datasource": {
+          "type": "grafana-testdata-datasource",
+          "uid": "PD8C576611E62080A"
+        },
+        "description": "Daily active users - measures engagement and product adoption",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": 0
+                },
+                {
+                  "color": "yellow",
+                  "value": 5000
+                },
+                {
+                  "color": "green",
+                  "value": 10000
+                }
+              ]
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 6,
+          "x": 0,
+          "y": 6
+        },
+        "id": 2,
+        "options": {
+          "colorMode": "background",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "percentChangeColorMode": "standard",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "13.0.0-23744474324",
+        "targets": [
+          {
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "PD8C576611E62080A"
+            },
+            "max": 15000,
+            "min": 8000,
+            "range": true,
+            "refId": "A",
+            "scenarioId": "random_walk",
+            "seriesCount": 1,
+            "spread": 500,
+            "startValue": 12000
+          }
+        ],
+        "title": "Daily active users",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "grafana-testdata-datasource",
+          "uid": "PD8C576611E62080A"
+        },
+        "description": "Weekly active users - broader engagement metric",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": 0
+                },
+                {
+                  "color": "yellow",
+                  "value": 25000
+                },
+                {
+                  "color": "green",
+                  "value": 50000
+                }
+              ]
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 6,
+          "x": 6,
+          "y": 6
+        },
+        "id": 3,
+        "options": {
+          "colorMode": "background",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "percentChangeColorMode": "standard",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "13.0.0-23744474324",
+        "targets": [
+          {
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "PD8C576611E62080A"
+            },
+            "max": 65000,
+            "min": 45000,
+            "range": true,
+            "refId": "A",
+            "scenarioId": "random_walk",
+            "seriesCount": 1,
+            "spread": 2000,
+            "startValue": 55000
+          }
+        ],
+        "title": "Weekly active users",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "grafana-testdata-datasource",
+          "uid": "PD8C576611E62080A"
+        },
+        "description": "Conversion rate from visits to purchases - measures product success",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "mappings": [],
+            "max": 10,
+            "min": 0,
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "red",
+                  "value": 0
+                },
+                {
+                  "color": "yellow",
+                  "value": 2
+                },
+                {
+                  "color": "green",
+                  "value": 3.5
+                }
+              ]
+            },
+            "unit": "percent"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 6,
+          "x": 12,
+          "y": 6
+        },
+        "id": 4,
+        "options": {
+          "colorMode": "background",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "percentChangeColorMode": "standard",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "13.0.0-23744474324",
+        "targets": [
+          {
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "PD8C576611E62080A"
+            },
+            "max": 4.5,
+            "min": 2.5,
+            "range": true,
+            "refId": "A",
+            "scenarioId": "random_walk",
+            "seriesCount": 1,
+            "spread": 0.2,
+            "startValue": 3.8
+          }
+        ],
+        "title": "Conversion rate",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "grafana-testdata-datasource",
+          "uid": "PD8C576611E62080A"
+        },
+        "description": "Total revenue - primary business outcome metric",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "decimals": 0,
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": 0
+                }
+              ]
+            },
+            "unit": "currencyUSD"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 5,
+          "w": 6,
+          "x": 18,
+          "y": 6
+        },
+        "id": 5,
+        "options": {
+          "colorMode": "value",
+          "graphMode": "area",
+          "justifyMode": "auto",
+          "orientation": "auto",
+          "percentChangeColorMode": "standard",
+          "reduceOptions": {
+            "calcs": [
+              "lastNotNull"
+            ],
+            "fields": "",
+            "values": false
+          },
+          "showPercentChange": false,
+          "textMode": "auto",
+          "wideLayout": true
+        },
+        "pluginVersion": "13.0.0-23744474324",
+        "targets": [
+          {
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "PD8C576611E62080A"
+            },
+            "max": 85000,
+            "min": 65000,
+            "range": true,
+            "refId": "A",
+            "scenarioId": "random_walk",
+            "seriesCount": 1,
+            "spread": 3000,
+            "startValue": 75000
+          }
+        ],
+        "title": "Revenue (daily)",
+        "type": "stat"
+      },
+      {
+        "collapsed": false,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 11
+        },
+        "id": 19,
+        "panels": [],
+        "title": "Trends",
+        "type": "row"
+      },
+      {
+        "datasource": {
+          "type": "grafana-testdata-datasource",
+          "uid": "PD8C576611E62080A"
+        },
+        "description": "User engagement trend - DAU and WAU over time",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 10,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 2,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "never",
+              "showValues": false,
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": 0
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 12
+        },
+        "id": 6,
+        "options": {
+          "annotations": {
+            "clustering": -1,
+            "multiLane": false
+          },
+          "legend": {
+            "calcs": [
+              "mean",
+              "max"
+            ],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "hideZeros": false,
+            "mode": "multi",
+            "sort": "desc"
+          }
+        },
+        "pluginVersion": "13.0.0-23744474324",
+        "targets": [
+          {
+            "alias": "Daily Active Users,Weekly Active Users",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "PD8C576611E62080A"
+            },
+            "max": 15000,
+            "min": 8000,
+            "range": true,
+            "refId": "A",
+            "scenarioId": "random_walk",
+            "seriesCount": 2,
+            "spread": 500
+          }
+        ],
+        "title": "Active users trend",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "grafana-testdata-datasource",
+          "uid": "PD8C576611E62080A"
+        },
+        "description": "Revenue trend over time - primary business outcome",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 20,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 2,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "never",
+              "showValues": false,
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": 0
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "currencyUSD"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 12
+        },
+        "id": 7,
+        "options": {
+          "annotations": {
+            "clustering": -1,
+            "multiLane": false
+          },
+          "legend": {
+            "calcs": [
+              "mean",
+              "max"
+            ],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "hideZeros": false,
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "13.0.0-23744474324",
+        "targets": [
+          {
+            "alias": "Daily Revenue",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "PD8C576611E62080A"
+            },
+            "max": 85000,
+            "min": 65000,
+            "range": true,
+            "refId": "A",
+            "scenarioId": "random_walk",
+            "seriesCount": 1,
+            "spread": 3000
+          }
+        ],
+        "title": "Revenue trend",
+        "type": "timeseries"
+      },
+      {
+        "collapsed": false,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 20
+        },
+        "id": 20,
+        "panels": [],
+        "title": "Impact Analysis",
+        "type": "row"
+      },
+      {
+        "datasource": {
+          "type": "grafana-testdata-datasource",
+          "uid": "PD8C576611E62080A"
+        },
+        "description": "Correlation between error rates and conversion - shows how technical issues impact business outcomes. When error rates spike (red line), conversions typically drop.",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 10,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 2,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "never",
+              "showValues": false,
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": 0
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": [
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Error Rate (%)"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "red",
+                    "mode": "fixed"
+                  }
+                },
+                {
+                  "id": "custom.axisPlacement",
+                  "value": "right"
+                },
+                {
+                  "id": "unit",
+                  "value": "percent"
+                }
+              ]
+            },
+            {
+              "matcher": {
+                "id": "byName",
+                "options": "Conversion Rate (%)"
+              },
+              "properties": [
+                {
+                  "id": "color",
+                  "value": {
+                    "fixedColor": "green",
+                    "mode": "fixed"
+                  }
+                },
+                {
+                  "id": "unit",
+                  "value": "percent"
+                }
+              ]
+            }
+          ]
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 21
+        },
+        "id": 8,
+        "options": {
+          "annotations": {
+            "clustering": -1,
+            "multiLane": false
+          },
+          "legend": {
+            "calcs": [
+              "mean"
+            ],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "hideZeros": false,
+            "mode": "multi",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "13.0.0-23744474324",
+        "targets": [
+          {
+            "alias": "Conversion Rate (%)",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "PD8C576611E62080A"
+            },
+            "max": 4.5,
+            "min": 2.5,
+            "range": true,
+            "refId": "A",
+            "scenarioId": "random_walk",
+            "seriesCount": 1,
+            "spread": 0.2
+          },
+          {
+            "alias": "Error Rate (%)",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "PD8C576611E62080A"
+            },
+            "max": 3,
+            "min": 0.5,
+            "range": true,
+            "refId": "B",
+            "scenarioId": "random_walk",
+            "seriesCount": 1,
+            "spread": 0.3
+          }
+        ],
+        "title": "Error impact on conversion",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "grafana-testdata-datasource",
+          "uid": "PD8C576611E62080A"
+        },
+        "description": "Conversion funnel - track users through key product stages",
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 15,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 2,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "never",
+              "showValues": false,
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": 0
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 21
+        },
+        "id": 9,
+        "options": {
+          "annotations": {
+            "clustering": -1,
+            "multiLane": false
+          },
+          "legend": {
+            "calcs": [
+              "last"
+            ],
+            "displayMode": "table",
+            "placement": "right",
+            "showLegend": true
+          },
+          "tooltip": {
+            "hideZeros": false,
+            "mode": "multi",
+            "sort": "desc"
+          }
+        },
+        "pluginVersion": "13.0.0-23744474324",
+        "targets": [
+          {
+            "alias": "Visits,Sign-ups,Trial Starts,Conversions",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "PD8C576611E62080A"
+            },
+            "max": 10000,
+            "min": 1000,
+            "range": true,
+            "refId": "A",
+            "scenarioId": "random_walk",
+            "seriesCount": 4,
+            "spread": 300
+          }
+        ],
+        "title": "Conversion funnel",
+        "type": "timeseries"
+      },
+      {
+        "collapsed": true,
+        "gridPos": {
+          "h": 1,
+          "w": 24,
+          "x": 0,
+          "y": 29
+        },
+        "id": 21,
+        "panels": [
+          {
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "PD8C576611E62080A"
+            },
+            "description": "User retention cohorts - measures customer stickiness and long-term value. Shows percentage of users returning after initial signup.",
+            "fieldConfig": {
+              "defaults": {
+                "color": {
+                  "mode": "thresholds"
+                },
+                "custom": {
+                  "align": "center",
+                  "cellOptions": {
+                    "type": "auto"
+                  },
+                  "footer": {
+                    "reducers": []
+                  },
+                  "inspect": false
+                },
+                "thresholds": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "red",
+                      "value": 0
+                    },
+                    {
+                      "color": "yellow",
+                      "value": 30
+                    },
+                    {
+                      "color": "green",
+                      "value": 60
+                    }
+                  ]
+                },
+                "unit": "percent"
+              },
+              "overrides": [
+                {
+                  "matcher": {
+                    "id": "byName",
+                    "options": "Cohort"
+                  },
+                  "properties": [
+                    {
+                      "id": "custom.cellOptions",
+                      "value": {
+                        "type": "auto"
+                      }
+                    },
+                    {
+                      "id": "thresholds",
+                      "value": {
+                        "mode": "absolute",
+                        "steps": [
+                          {
+                            "color": "text",
+                            "value": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "matcher": {
+                    "id": "byName",
+                    "options": "Users"
+                  },
+                  "properties": [
+                    {
+                      "id": "custom.cellOptions",
+                      "value": {
+                        "type": "auto"
+                      }
+                    },
+                    {
+                      "id": "unit",
+                      "value": "short"
+                    },
+                    {
+                      "id": "thresholds",
+                      "value": {
+                        "mode": "absolute",
+                        "steps": [
+                          {
+                            "color": "text",
+                            "value": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "matcher": {
+                    "id": "byName",
+                    "options": "Day 1"
+                  },
+                  "properties": [
+                    {
+                      "id": "custom.cellOptions",
+                      "value": {
+                        "mode": "gradient",
+                        "type": "color-background"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "matcher": {
+                    "id": "byName",
+                    "options": "Day 7"
+                  },
+                  "properties": [
+                    {
+                      "id": "custom.cellOptions",
+                      "value": {
+                        "mode": "gradient",
+                        "type": "color-background"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "matcher": {
+                    "id": "byName",
+                    "options": "Day 30"
+                  },
+                  "properties": [
+                    {
+                      "id": "custom.cellOptions",
+                      "value": {
+                        "mode": "gradient",
+                        "type": "color-background"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "matcher": {
+                    "id": "byName",
+                    "options": "Day 90"
+                  },
+                  "properties": [
+                    {
+                      "id": "custom.cellOptions",
+                      "value": {
+                        "mode": "gradient",
+                        "type": "color-background"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "gridPos": {
+              "h": 8,
+              "w": 24,
+              "x": 0,
+              "y": 27
+            },
+            "id": 10,
+            "options": {
+              "cellHeight": "sm",
+              "showHeader": true
+            },
+            "pluginVersion": "12.3.0-18356121373",
+            "targets": [
+              {
+                "alias": "",
+                "csvContent": "Cohort,Users,Day 1,Day 7,Day 30,Day 90\nOct 2025,2450,85,72,58,42\nSep 2025,2890,82,68,55,38\nAug 2025,3120,78,65,52,35\nJul 2025,2780,81,70,56,40\nJun 2025,2650,79,67,54,36\nMay 2025,3050,83,71,59,43\nApr 2025,2920,80,66,53,37\nMar 2025,2810,77,64,51,34",
+                "datasource": {
+                  "type": "grafana-testdata-datasource",
+                  "uid": "PD8C576611E62080A"
+                },
+                "range": true,
+                "refId": "A",
+                "scenarioId": "csv_content"
+              }
+            ],
+            "title": "Retention cohorts",
+            "type": "table"
+          }
+        ],
+        "title": "Retention",
+        "type": "row"
+      }
+    ],
+    "preload": false,
+    "refresh": "",
+    "schemaVersion": 42,
+    "tags": [],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "now-6h",
+      "to": "now"
+    },
+    "timepicker": {},
+    "timezone": "browser",
+    "title": "Business Observability - North Star Metrics",
+    "weekStart": ""
+  }
+}
