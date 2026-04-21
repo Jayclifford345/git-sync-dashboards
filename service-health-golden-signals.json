@@ -452,7 +452,7 @@
                         "scenarioId": "random_walk",
                         "seriesCount": 1,
                         "spread": 5,
-                        "startValue": 95
+                        "startValue": 90
                       },
                       "version": "v0"
                     },
