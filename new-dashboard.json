@@ -2,7 +2,7 @@
   "apiVersion": "dashboard.grafana.app/v2",
   "kind": "Dashboard",
   "metadata": {
-    "name": "ddfjquz5q160aoc"
+    "name": "dffjqx061dg268a"
   },
   "spec": {
     "annotations": [
@@ -42,9 +42,17 @@
                   "spec": {
                     "hidden": false,
                     "query": {
-                      "group": "",
+                      "datasource": {
+                        "name": "grafanacloud-demoinfra-prom"
+                      },
+                      "group": "prometheus",
                       "kind": "DataQuery",
-                      "spec": {},
+                      "spec": {
+                        "editorMode": "builder",
+                        "expr": "probe_all_duration_seconds_bucket",
+                        "legendFormat": "__auto",
+                        "range": true
+                      },
                       "version": "v0"
                     },
                     "refId": "A"
@@ -60,14 +68,81 @@
           "links": [],
           "title": "New panel",
           "vizConfig": {
-            "group": "__unconfigured-panel",
+            "group": "timeseries",
             "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
-                "defaults": {},
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "barAlignment": 0,
+                    "barWidthFactor": 0.6,
+                    "drawStyle": "line",
+                    "fillOpacity": 0,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "insertNulls": false,
+                    "lineInterpolation": "linear",
+                    "lineWidth": 1,
+                    "pointSize": 5,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "showPoints": "auto",
+                    "showValues": false,
+                    "spanNulls": false,
+                    "stacking": {
+                      "group": "A",
+                      "mode": "none"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  }
+                },
                 "overrides": []
               },
-              "options": {}
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "single",
+                  "sort": "none"
+                }
+              }
             },
             "version": "13.1.0-24556818486"
           }
@@ -94,7 +169,20 @@
         ]
       }
     },
-    "links": [],
+    "links": [
+      {
+        "asDropdown": false,
+        "icon": "external link",
+        "includeVars": false,
+        "keepTime": false,
+        "tags": [],
+        "targetBlank": true,
+        "title": "Source (GitHub)",
+        "tooltip": "View source file in repository",
+        "type": "link",
+        "url": "https://github.com/Jayclifford345/git-sync-dashboards/blob/main/new-dashboard.json"
+      }
+    ],
     "liveNow": false,
     "preferences": {
       "layout": {
